@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="webviewfx.MainController">
+   <children>
+      <HBox layoutY="546.0" prefHeight="54.0" prefWidth="798.0" spacing="40.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#btn1" text="Load Google" />
+            <Button mnemonicParsing="false" onAction="#btn2" text="Run JavaScript" />
+            <Button mnemonicParsing="false" onAction="#btn3" text="Load HTML" />
+            <Button mnemonicParsing="false" onAction="#btn4" text="Reload page" />
+            <Button mnemonicParsing="false" onAction="#btn5" text="Show history" />
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <Label fx:id="lblJavaScriptEnabled" layoutX="145.0" layoutY="489.0" prefHeight="25.0" prefWidth="137.0" />
+      <Label fx:id="lblHistory" alignment="TOP_LEFT" layoutX="519.0" layoutY="451.0" prefHeight="86.0" prefWidth="204.0" text="Browsing history" />
+      <WebView fx:id="webView" prefHeight="393.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0" />
+      <CheckBox fx:id="cbJavaScript" layoutX="145.0" layoutY="520.0" mnemonicParsing="false" onAction="#checkBox" text="JavaScript enabled" />
+   </children>
+</AnchorPane>

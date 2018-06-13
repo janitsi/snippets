@@ -1,0 +1,21 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/* Apply properties to single object -> provide #id. Apply to all objects of same category -> provide .objectclass */
+.root {
+	-fx-background-color: gray;
+}.button {
+	-fx-font-size: 30;
+	-fx-background-color: rgba(255, 200, 255, .80);
+	-fx-text-fill: blue;
+	-fx-padding: 6 6 6 6;
+	-fx-border-radius: 8;
+	-fx-font-weight: bold;
+}
+#myMessage {
+	-fx-font-size: 30;
+	-fx-background-color: gray;
+	-fx-text-fill: blue;
+	-fx-padding: 6 6 6 6;
+	-fx-border-radius: 8;
+	-fx-font-weight: bold;
+}
+
