@@ -21,10 +21,10 @@ public class MainController {
 	
 	@FXML
 	public void initialize() {
-		id.setCellValueFactory(new PropertyValueFactory<Student, Integer>("id"));
-		name.setCellValueFactory(new PropertyValueFactory<Student, String>("name"));
-		surname.setCellValueFactory(new PropertyValueFactory<Student, String>("surname"));
-		age.setCellValueFactory(new PropertyValueFactory<Student, Integer>("age"));
+		id.setCellValueFactory(new PropertyValueFactory<>("id"));
+		name.setCellValueFactory(new PropertyValueFactory<>("name"));
+		surname.setCellValueFactory(new PropertyValueFactory<>("surname"));
+		age.setCellValueFactory(new PropertyValueFactory<>("age"));
 		table.setItems(list);
 		
 	}
